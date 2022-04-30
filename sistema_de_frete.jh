@@ -1,0 +1,80 @@
+
+entity Cliente {
+	nome String required
+    cnpj String required
+    telefone Telefone
+    endereco Endereco
+}
+
+entity Motorista {
+	nome String required
+    cnh String required
+    validadeCnh LocalDate
+    genero Sexo
+    telefone Telefone
+    endereco Endereco
+    
+}
+
+entity Endereco {
+	logradouro String required
+	complemento String
+	numero Integer
+	
+}
+
+entity Telefone {
+	numero String required
+}
+
+entity Cidade {
+	nome String required
+    uf String
+}
+
+enum Sexo {M,F}
+
+entity Despesa {
+	tipoDespesa Tipo
+	descricao String required
+    valor Double
+}
+
+enum Tipo {MANUTENCAO,ABASTECIMENTO,HOSPEDAGEM,MULTA,REFEICAO}
+
+entity Viagem {
+	previsaoDeEntrega LocalDate
+    entregueNoPrazo Boolean
+    previsaoDeRetorno LocalDate
+}
+
+entity Frete {
+	data LocalDate
+	prazoDeEntrega Integer
+	valor Double
+}
+
+entity Caminhao {
+	marca String
+    placa String required
+    ano String
+    cargaTotal Double
+}
+
+relationship OneToOne {
+	Cliente{endereco(logradouro)} to Endereco
+}
+
+
+relationship ManyToOne {
+	Frete{cliente(nome)} to Cliente
+    Frete{Cidade(nome)} to Cidade
+    Frete{motorista(nome)} to Motorista
+    Frete{caminhao(placa)} to Caminhao
+    Viagem{frete(data)} to Frete
+    Viagem{despesa(tipoDespesa)} to Despesa
+    Telefone{cliente(nome)} to Cliente
+    Telefone{motorista(nome)} to Motorista
+    
+	
+}
