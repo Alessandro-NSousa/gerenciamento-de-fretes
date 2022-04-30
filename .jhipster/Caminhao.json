@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20220430041610",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "caminhao",
+  "fields": [
+    {
+      "fieldName": "marca",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "placa",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ano",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cargaTotal",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Caminhao",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

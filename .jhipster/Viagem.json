@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20220430041608",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "viagem",
+  "fields": [
+    {
+      "fieldName": "previsaoDeEntrega",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "entregueNoPrazo",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "previsaoDeRetorno",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Viagem",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "data",
+      "otherEntityName": "frete",
+      "otherEntityRelationshipName": "viagem",
+      "relationshipName": "frete",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "tipoDespesa",
+      "otherEntityName": "despesa",
+      "otherEntityRelationshipName": "viagem",
+      "relationshipName": "despesa",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

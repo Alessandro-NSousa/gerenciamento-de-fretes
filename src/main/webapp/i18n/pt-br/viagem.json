@@ -1,0 +1,28 @@
+{
+  "freightSystemApp": {
+    "viagem": {
+      "home": {
+        "title": "Viagems",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Viagem",
+        "createOrEditLabel": "Criar ou editar Viagem",
+        "notFound": "Nenhum Viagem encontrado"
+      },
+      "created": "Um novo Viagem foi criado com o identificador {{ param }}",
+      "updated": "Um Viagem foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Viagem foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Viagem {{ id }}?"
+      },
+      "detail": {
+        "title": "Viagem"
+      },
+      "id": "ID",
+      "previsaoDeEntrega": "Previsao De Entrega",
+      "entregueNoPrazo": "Entregue No Prazo",
+      "previsaoDeRetorno": "Previsao De Retorno",
+      "frete": "Frete",
+      "despesa": "Despesa"
+    }
+  }
+}
