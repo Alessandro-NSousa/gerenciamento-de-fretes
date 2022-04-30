@@ -2,7 +2,6 @@
 entity Cliente {
 	nome String required
     cnpj String required
-    telefone Telefone
     endereco Endereco
 }
 
@@ -11,7 +10,6 @@ entity Motorista {
     cnh String required
     validadeCnh LocalDate
     genero Sexo
-    telefone Telefone
     endereco Endereco
     
 }
