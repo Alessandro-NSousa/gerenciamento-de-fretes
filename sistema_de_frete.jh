@@ -2,8 +2,6 @@
 entity Cliente {
 	nome String required
     cnpj String required
-    telefone Telefone
-    endereco Endereco
 }
 
 entity Motorista {
@@ -11,12 +9,11 @@ entity Motorista {
     cnh String required
     validadeCnh LocalDate
     genero Sexo
-    telefone Telefone
-    endereco Endereco
     
 }
 
 entity Endereco {
+	cep String required
 	logradouro String required
 	complemento String
 	numero Integer
@@ -29,8 +26,10 @@ entity Telefone {
 
 entity Cidade {
 	nome String required
-    uf String
+    uf Uf
 }
+
+enum Uf {AC,AL,AP,AM,BA,CE,ES,GO,MA,MT,MS,MG,PA,PB,PR,PE,PI,RJ,RN,RS,RO,RR,SC,SP,SE,TO,DF}
 
 enum Sexo {M,F}
 
