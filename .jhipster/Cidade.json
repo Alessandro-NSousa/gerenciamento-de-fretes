@@ -1,0 +1,26 @@
+{
+  "applications": "*",
+  "changelogDate": "20220430041606",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "cidade",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "uf",
+      "fieldType": "Uf",
+      "fieldValues": "AC,AL,AP,AM,BA,CE,ES,GO,MA,MT,MS,MG,PA,PB,PR,PE,PI,RJ,RN,RS,RO,RR,SC,SP,SE,TO,DF"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cidade",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

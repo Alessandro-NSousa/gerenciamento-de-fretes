@@ -1,0 +1,30 @@
+{
+  "applications": "*",
+  "changelogDate": "20220430041607",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "despesa",
+  "fields": [
+    {
+      "fieldName": "tipoDespesa",
+      "fieldType": "Tipo",
+      "fieldValues": "MANUTENCAO,ABASTECIMENTO,HOSPEDAGEM,MULTA,REFEICAO"
+    },
+    {
+      "fieldName": "descricao",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "valor",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Despesa",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

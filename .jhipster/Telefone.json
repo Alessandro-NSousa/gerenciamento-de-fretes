@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20220430041605",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "telefone",
+  "fields": [
+    {
+      "fieldName": "numero",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Telefone",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "nome",
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "telefone",
+      "relationshipName": "cliente",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "nome",
+      "otherEntityName": "motorista",
+      "otherEntityRelationshipName": "telefone",
+      "relationshipName": "motorista",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

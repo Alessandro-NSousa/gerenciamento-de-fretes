@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20220430041603",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "motorista",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cnh",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "validadeCnh",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "genero",
+      "fieldType": "Sexo",
+      "fieldValues": "M,F"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Motorista",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
